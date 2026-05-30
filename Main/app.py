@@ -2,7 +2,7 @@ import joblib
 import streamlit as st
 
 try:
-    svm_pipeline_model = joblib.load(r"Main\svm_pineline_model.jb")
+    svm_pipeline_model = joblib.load("Main/svm_pineline_model.jb")
 except FileNotFoundError:
     st.error(
         "Không tìm thấy file mô hình 'svm_pipeline_model.jb'. Hãy chắc chắn bạn đã copy file này vào cùng thư mục!"
